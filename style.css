@@ -136,13 +136,13 @@ h1 {
 
   .email {
   background: #000;
-  border: 2px solid #00c853;
+  border: 2px solid #00e5ff; /* bleu turquoise différent de Discord */
   color: #fff;
 }
 .email:hover {
-  box-shadow: 0 0 20px #00c853;
-  background: #00c853;
-  color: #fff;
+  box-shadow: 0 0 20px #00e5ff;
+  background: #00e5ff;
+  color: #000; /* texte noir pour bien contraster */
 }
 
 
