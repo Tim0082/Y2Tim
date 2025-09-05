@@ -1,101 +1,94 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mes Réseaux</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    /* --- Style global --- */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+/* --- Fond animé --- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #1d1d1d, #111, #222, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-    .container {
-      text-align: center;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-      backdrop-filter: blur(10px);
-      max-width: 400px;
-      width: 90%;
-    }
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
 
-    h1 {
-      margin-bottom: 25px;
-      font-size: 2rem;
-      font-weight: 600;
-    }
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 50px 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter: blur(12px);
+  max-width: 400px;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
 
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
+.container:hover {
+  transform: translateY(-5px);
+}
 
-    /* --- Boutons réseaux --- */
-    .links a {
-      text-decoration: none;
-      padding: 15px;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: 500;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      transition: all 0.3s ease;
-    }
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
-    .links a i {
-      font-size: 22px;
-    }
+/* --- Photo de profil --- */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
 
-    .tiktok { background: #010101; }
-    .tiktok:hover { background: #ff0050; }
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-    .instagram { background: #e1306c; }
-    .instagram:hover { background: #c13584; }
+.links a {
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
-    .snapchat { background: #fffc00; color: #000; }
-    .snapchat:hover { background: #ffe600; }
+.links a i {
+  font-size: 24px;
+}
 
-    .twitch { background: #9146ff; }
-    .twitch:hover { background: #772ce8; }
+/* --- Couleurs des réseaux --- */
+.tiktok { background: #010101; }
+.tiktok:hover { background: #ff0050; transform: scale(1.05); }
 
-    .youtube { background: #ff0000; }
-    .youtube:hover { background: #cc0000; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>🌐 Mes Réseaux</h1>
-    <div class="links">
-      <a class="tiktok" href="https://www.tiktok.com/@3ncore_moi" target="_blank">
-        <i class="fab fa-tiktok"></i> TikTok : 3ncore_moi
-      </a>
-      <a class="instagram" href="https://www.instagram.com/y2tim" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram : y2tim
-      </a>
-      <a class="snapchat" href="https://www.snapchat.com/add/tim.scio" target="_blank">
-        <i class="fab fa-snapchat-ghost"></i> Snapchat : tim.scio
-      </a>
-      <a class="twitch" href="https://www.twitch.tv/y2timm" target="_blank">
-        <i class="fab fa-twitch"></i> Twitch : y2timm
-      </a>
-      <a class="youtube" href="#" target="_blank">
-        <i class="fab fa-youtube"></i> YouTube (bientôt)
-      </a>
-    </div>
-  </div>
-</body>
-</html>
+.instagram { background: #e1306c; }
+.instagram:hover { background: #c13584; transform: scale(1.05); }
+
+.snapchat { background: #fffc00; color: #000; }
+.snapchat:hover { background: #ffe600; transform: scale(1.05); }
+
+.twitch { background: #9146ff; }
+.twitch:hover { background: #772ce8; transform: scale(1.05); }
+
+.youtube { background: #ff0000; }
+.youtube:hover { background: #cc0000; transform: scale(1.05); }
