@@ -1,4 +1,4 @@
-/* --- Fond animé futuriste --- */
+/* Fond animé futuriste */
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
@@ -11,7 +11,6 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
 @keyframes gradientBG {
   0% {background-position:0% 50%;}
   50% {background-position:100% 50%;}
@@ -29,7 +28,6 @@ body {
   box-shadow: 0 0 50px rgba(0,255,255,0.2);
   animation: fadeIn 1.5s ease forwards;
 }
-
 @keyframes fadeIn {
   from {opacity:0; transform: translateY(-20px);}
   to {opacity:1; transform: translateY(0);}
@@ -44,11 +42,7 @@ body {
   border: 3px solid #00f0ff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.profile-pic:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px #00f0ff;
-}
+.profile-pic:hover { transform: scale(1.1); box-shadow: 0 0 25px #00f0ff; }
 
 h1 {
   margin-bottom: 35px;
@@ -58,78 +52,30 @@ h1 {
   text-shadow: 0 0 10px #00f0ff;
 }
 
-/* --- Liens futuristes --- */
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
+/* Liens futuristes */
+.links { display: flex; flex-direction: column; gap: 18px; }
 .link {
   text-decoration: none;
   padding: 16px 20px;
   border-radius: 15px;
   background-color: rgba(27,27,27,0.8);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-weight: 500;
+  display: flex; align-items: center; gap: 12px;
+  font-weight: 500; color: #fff;
   transition: all 0.3s ease;
-  color: #fff;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-
-.link i {
-  font-size: 22px;
-  transition: all 0.3s ease;
-}
-
+.link i { font-size: 22px; transition: all 0.3s ease; }
 .link:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 6px 25px rgba(0,255,255,0.5), 0 0 15px rgba(0,255,255,0.3);
 }
 
-/* Réseaux couleurs */
+/* Teintes au hover par réseau (subtil) */
 .tiktok:hover { box-shadow: 0 6px 25px rgba(255,0,128,0.6); }
 .instagram:hover { box-shadow: 0 6px 25px rgba(224,48,108,0.6); }
 .snapchat:hover { box-shadow: 0 6px 25px rgba(255,252,0,0.6); color:#000; }
 .twitch:hover { box-shadow: 0 6px 25px rgba(145,70,255,0.6); }
 .youtube:hover { box-shadow: 0 6px 25px rgba(255,0,0,0.6); }
 
-/* --- Bouton musique --- */
-.music-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: rgba(27,27,27,0.8);
-  color: #00f0ff;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 12px;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,255,255,0.4), 0 0 10px rgba(0,255,255,0.2);
-  transition: all 0.3s ease;
-  z-index: 1000;
-}
-
-.music-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0,255,255,0.6), 0 0 15px rgba(0,255,255,0.3);
-}
-
-.music-btn.playing {
-  animation: pulse 1.2s infinite;
-}
-
-@keyframes pulse {
-  0% {box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;}
-  50% {box-shadow: 0 0 25px #00f0ff, 0 0 35px #00f0ff;}
-  100% {box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;}
-}
-
 /* Responsive */
-@media (max-width: 480px) {
-  .container {padding: 30px 20px;}
-  .link {padding: 14px 18px;}
-}
+@media (max-width: 480px)
