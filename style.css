@@ -1,8 +1,10 @@
-/* --- Style général minimaliste --- */
+/* --- Fond sombre futuriste --- */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #121212;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #0f0f0f);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -10,10 +12,21 @@ body {
   min-height: 100vh;
 }
 
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
 .container {
   text-align: center;
-  max-width: 350px;
+  max-width: 380px;
   width: 90%;
+  padding: 40px 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
 }
 
 .profile-pic {
@@ -21,42 +34,62 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border: 2px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
+/* --- Liens futuristes --- */
 .links {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
 .link {
   text-decoration: none;
-  padding: 12px 20px;
-  background-color: #1e1e1e;
-  border-radius: 12px;
+  padding: 14px 20px;
+  border-radius: 15px;
+  background-color: #1b1b1b;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-weight: 500;
   transition: all 0.3s ease;
   color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
+/* Icônes */
 .link i {
-  font-size: 20px;
+  font-size: 22px;
+  transition: all 0.3s ease;
 }
 
-/* --- Hover discret et pro --- */
+/* Hover glow et déplacement */
 .link:hover {
-  background-color: #333333;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,255,255,0.4), 0 0 15px rgba(0,255,255,0.2);
 }
+
+.link:hover i {
+  color: #00f0ff;
+}
+
+/* Couleurs des réseaux */
+.tiktok:hover { box-shadow: 0 6px 20px rgba(255,0,128,0.6), 0 0 15px rgba(255,0,128,0.3); }
+.instagram:hover { box-shadow: 0 6px 20px rgba(224,48,108,0.6), 0 0 15px rgba(224,48,108,0.3); }
+.snapchat:hover { box-shadow: 0 6px 20px rgba(255,252,0,0.6), 0 0 15px rgba(255,252,0,0.3); color: #000; }
+.twitch:hover { box-shadow: 0 6px 20px rgba(145,70,255,0.6), 0 0 15px rgba(145,70,255,0.3); }
+.youtube:hover { box-shadow: 0 6px 20px rgba(255,0,0,0.6), 0 0 15px rgba(255,0,0,0.3); }
