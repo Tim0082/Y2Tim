@@ -111,5 +111,17 @@ h1 {
 }
 .youtube:hover {
   box-shadow: 0 0 20px #ff0000;
+
+  .discord {
+  background: #000;
+  border: 2px solid #5865f2;
+  color: #fff;
+}
+.discord:hover {
+  box-shadow: 0 0 20px #5865f2;
+  background: #5865f2;
+  color: #fff;
+}
+
   background: #ff0000;
 }
