@@ -134,6 +134,27 @@ h1 {
   color: #fff;
 }
 
+  .copy-discord {
+  background: #111;
+  border: 2px solid #00aaff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.copy-discord:hover {
+  background: #00aaff;
+  color: #000;
+  box-shadow: 0 0 20px #00aaff;
+}
+
+
   .email {
   background: #000;
   border: 2px solid #00e5ff; /* bleu turquoise différent de Discord */
