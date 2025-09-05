@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Y2Tim - Mes Réseaux</title>
+  <style>
+    /* Style général */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ff4d4d, #ff66cc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: #bbb;
+      margin-bottom: 40px;
+      font-size: 1.2em;
+    }
+
+    /* Container des boutons */
+    .links {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Boutons */
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      background: #222;
+      border: 2px solid #333;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #333;
+      border-color: #ff4d4d;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 15px rgba(255, 77, 77, 0.2);
+    }
+
+    /* Icônes émoji pour le style */
+    .btn span {
+      margin-right: 10px;
+      font-size: 1.3em;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Y2Tim</h1>
+  <p>Retrouve-moi ici 👇</p>
+
+  <div class="links">
+    <a class="btn" href="https://www.snapchat.com/add/tim.scio" target="_blank"><span>👻</span> Snapchat</a>
+    <a class="btn" href="https://instagram.com/Y2Tim" target="_blank"><span>📸</span> Instagram</a>
+    <a class="btn" href="https://www.tiktok.com/@OasisFraise" target="_blank"><span>🎵</span> TikTok</a>
+    <a class="btn" href="https://youtube.com/@Y2Tim" target="_blank"><span>▶️</span> YouTube</a>
+  </div>
+
+  <footer>
+    © 2025 - Y2Tim
+  </footer>
+</body>
+</html>
