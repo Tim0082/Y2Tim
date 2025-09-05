@@ -2,26 +2,59 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Y2Tim - Mes Réseaux</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Réseaux</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 300px;
+      margin: auto;
+    }
+    a {
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.3s;
+      color: white;
+      display: block;
+    }
+    .tiktok { background: #010101; }
+    .tiktok:hover { background: #ff0050; }
+
+    .instagram { background: #e1306c; }
+    .instagram:hover { background: #c13584; }
+
+    .snapchat { background: #fffc00; color: #000; }
+    .snapchat:hover { background: #ffe600; }
+
+    .twitch { background: #9146ff; }
+    .twitch:hover { background: #772ce8; }
+
+    .youtube { background: #ff0000; }
+    .youtube:hover { background: #cc0000; }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <img src="https://via.placeholder.com/120" alt="Photo de profil" class="avatar">
-      <h1>Y2Tim</h1>
-      <p class="subtitle">Créateur de contenu 🎥 | Réseaux sociaux 📱</p>
-
-      <div class="links">
-        <a class="btn snap" href="https://www.snapchat.com/add/tim.scio" target="_blank">👻 Snapchat</a>
-        <a class="btn insta" href="https://instagram.com/Y2Tim" target="_blank">📸 Instagram</a>
-        <a class="btn tiktok" href="https://www.tiktok.com/@OasisFraise" target="_blank">🎵 TikTok</a>
-        <a class="btn yt" href="https://youtube.com/@Y2Tim" target="_blank">▶️ YouTube</a>
-      </div>
-    </div>
-    <footer>
-      © 2025 - Y2Tim | Tous droits réservés
-    </footer>
+  <h1>Mes Réseaux</h1>
+  <div class="links">
+    <a class="tiktok" href="https://www.tiktok.com/@3ncore_moi" target="_blank">TikTok : 3ncore_moi</a>
+    <a class="instagram" href="https://www.instagram.com/y2tim" target="_blank">Instagram : y2tim</a>
+    <a class="snapchat" href="https://www.snapchat.com/add/tim.scio" target="_blank">Snapchat : tim.scio</a>
+    <a class="twitch" href="https://www.twitch.tv/y2timm" target="_blank">Twitch : y2timm</a>
+    <a class="youtube" href="#" target="_blank">YouTube (bientôt)</a>
   </div>
 </body>
 </html>
