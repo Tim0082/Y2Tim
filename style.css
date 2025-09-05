@@ -44,6 +44,17 @@ h1 {
   text-shadow: 0 0 10px cyan, 0 0 20px cyan;
 }
 
+.email {
+  background: #000;
+  border: 2px solid #00c853;
+  color: #fff;
+}
+.email:hover {
+  box-shadow: 0 0 20px #00c853;
+  background: #00c853;
+  color: #fff;
+}
+
 /* ----- Liens ----- */
 .links {
   display: flex;
