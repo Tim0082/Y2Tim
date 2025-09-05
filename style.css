@@ -87,13 +87,14 @@ h1 {
 .snapchat {
   background: #000;
   border: 2px solid #fffc00;
-  color: #000;
+  color: #fff; /* <-- texte blanc par défaut */
 }
 .snapchat:hover {
   box-shadow: 0 0 20px #fffc00;
   background: #fffc00;
-  color: #000;
+  color: #000; /* <-- texte noir uniquement quand le fond est jaune */
 }
+
 
 .twitch {
   background: #000;
