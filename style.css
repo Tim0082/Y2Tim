@@ -36,20 +36,6 @@ body {
   }
 }
 
-/* ----- Photo de profil ----- */
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid cyan;
-  margin-bottom: 15px;
-  box-shadow: 0 0 15px cyan, 0 0 30px cyan;
-  transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-  transform: scale(1.1);
-}
 
 /* ----- Nom ----- */
 h1 {
