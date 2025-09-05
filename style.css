@@ -123,16 +123,28 @@ h1 {
 .youtube:hover {
   box-shadow: 0 0 20px #ff0000;
 
-  .discord {
+.discord {
   background: #000;
-  border: 2px solid #5865f2;
+  border: 2px solid #00aaff; /* bordure bleue */
   color: #fff;
 }
 .discord:hover {
-  box-shadow: 0 0 20px #5865f2;
-  background: #5865f2;
+  box-shadow: 0 0 20px #00aaff; /* glow bleu néon */
+  background: #00aaff;
   color: #fff;
 }
+
+  .email {
+  background: #000;
+  border: 2px solid #00c853;
+  color: #fff;
+}
+.email:hover {
+  box-shadow: 0 0 20px #00c853;
+  background: #00c853;
+  color: #fff;
+}
+
 
   background: #ff0000;
 }
