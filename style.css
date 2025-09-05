@@ -123,20 +123,22 @@ h1 {
 .youtube:hover {
   box-shadow: 0 0 20px #ff0000;
 
+/* Bouton Discord (lien) */
 .discord {
   background: #000;
-  border: 2px solid #00aaff; /* bordure bleue */
+  border: 2px solid #00aaff; /* Bordure bleue */
   color: #fff;
 }
 .discord:hover {
-  box-shadow: 0 0 20px #00aaff; /* glow bleu néon */
+  box-shadow: 0 0 20px #00aaff;
   background: #00aaff;
   color: #fff;
 }
 
-  .copy-discord {
+/* Bouton Copier */
+.copy-discord {
   background: #111;
-  border: 2px solid #00aaff;
+  border: 2px solid #0088ff; /* Un bleu différent pour distinguer */
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -147,11 +149,10 @@ h1 {
   transition: all 0.3s ease;
   width: 100%;
 }
-
 .copy-discord:hover {
-  background: #00aaff;
+  background: #0088ff;
   color: #000;
-  box-shadow: 0 0 20px #00aaff;
+  box-shadow: 0 0 20px #0088ff;
 }
 
 
