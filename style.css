@@ -1,82 +1,128 @@
-/* Fond animé futuriste */
-body {
+/* ----- Reset ----- */
+* {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #0f0f0f, #1a1a1a);
-  background-size: 400% 400%;
-  animation: gradientBG 20s ease infinite;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----- Body ----- */
+body {
+  background: #0d0d0d;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-}
-@keyframes gradientBG {
-  0% {background-position:0% 50%;}
-  50% {background-position:100% 50%;}
-  100% {background-position:0% 50%;}
+  height: 100vh;
 }
 
+/* ----- Container ----- */
 .container {
+  background: rgba(15, 15, 15, 0.9);
+  padding: 30px;
+  border-radius: 20px;
   text-align: center;
-  max-width: 400px;
-  width: 90%;
-  padding: 40px 30px;
-  background: rgba(0,0,0,0.25);
-  border-radius: 25px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 0 50px rgba(0,255,255,0.2);
-  animation: fadeIn 1.5s ease forwards;
-}
-@keyframes fadeIn {
-  from {opacity:0; transform: translateY(-20px);}
-  to {opacity:1; transform: translateY(0);}
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  width: 320px;
+  animation: glow 3s infinite alternate;
 }
 
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.8);
+  }
+}
+
+/* ----- Photo de profil ----- */
 .profile-pic {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 25px;
-  border: 3px solid #00f0ff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid cyan;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px cyan, 0 0 30px cyan;
+  transition: transform 0.3s ease;
 }
-.profile-pic:hover { transform: scale(1.1); box-shadow: 0 0 25px #00f0ff; }
 
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* ----- Nom ----- */
 h1 {
-  margin-bottom: 35px;
-  font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px #00f0ff;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan;
 }
 
-/* Liens futuristes */
-.links { display: flex; flex-direction: column; gap: 18px; }
+/* ----- Liens ----- */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style général des boutons */
 .link {
+  display: block;
+  padding: 12px;
+  border-radius: 10px;
   text-decoration: none;
-  padding: 16px 20px;
-  border-radius: 15px;
-  background-color: rgba(27,27,27,0.8);
-  display: flex; align-items: center; gap: 12px;
-  font-weight: 500; color: #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-.link i { font-size: 22px; transition: all 0.3s ease; }
-.link:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 6px 25px rgba(0,255,255,0.5), 0 0 15px rgba(0,255,255,0.3);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Teintes au hover par réseau (subtil) */
-.tiktok:hover { box-shadow: 0 6px 25px rgba(255,0,128,0.6); }
-.instagram:hover { box-shadow: 0 6px 25px rgba(224,48,108,0.6); }
-.snapchat:hover { box-shadow: 0 6px 25px rgba(255,252,0,0.6); color:#000; }
-.twitch:hover { box-shadow: 0 6px 25px rgba(145,70,255,0.6); }
-.youtube:hover { box-shadow: 0 6px 25px rgba(255,0,0,0.6); }
+/* Couleurs par réseau */
+.tiktok {
+  background: #000;
+  border: 2px solid #ff0050;
+}
+.tiktok:hover {
+  box-shadow: 0 0 20px #ff0050;
+  background: #ff0050;
+}
 
+.instagram {
+  background: #000;
+  border: 2px solid #e1306c;
+}
+.instagram:hover {
+  box-shadow: 0 0 20px #e1306c;
+  background: #e1306c;
+}
 
+.snapchat {
+  background: #000;
+  border: 2px solid #fffc00;
+  color: #000;
+}
+.snapchat:hover {
+  box-shadow: 0 0 20px #fffc00;
+  background: #fffc00;
+  color: #000;
+}
 
+.twitch {
+  background: #000;
+  border: 2px solid #9146ff;
+}
+.twitch:hover {
+  box-shadow: 0 0 20px #9146ff;
+  background: #9146ff;
+}
 
+.youtube {
+  background: #000;
+  border: 2px solid #ff0000;
+}
+.youtube:hover {
+  box-shadow: 0 0 20px #ff0000;
+  background: #ff0000;
+}
